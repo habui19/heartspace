@@ -69,7 +69,7 @@ $(window).on("load", function () {
     displayMessages(greetings);
     $('.thoughts').animate({
         opacity: '100'
-    }, 150000);
+    }, 100000);
 })
 
 $('textarea').on("change", function () {
