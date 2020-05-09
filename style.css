@@ -1,7 +1,8 @@
 html {
   font-size: 10px;
   background: url(moon-star.jpg);
-  background-size: cover;
+  background-size: 100% auto;
+  overflow: hidden
 }
 
 body,
@@ -9,7 +10,41 @@ html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper>* {
+  padding: 20px;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.page-main div {
+  max-width: 500px;
+}
+
 
 .message {
   /* opacity: 0; */
@@ -19,18 +54,36 @@ html {
   -webkit-transform: translateY(-50%) translateX(-50%);
   -o-transform: translateY(-50%) translateX(-50%);
   top: 20%;
-  left: 49%;
+  left: 47%;
   width: 700px;
   color: #fff;
   text-align: center;
   font-size: 40px;
   font-family: coming soon;
-  position: absolute;
-  z-index: 999999
+  z-index: 999999;
+  position: absolute
 }
 
-.container {
+.thoughts {
+  display: block;
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  top: 35%;
+  left: 35%;
   text-align: center;
+  font-family: lato, sans-serif;
+  z-index: 3;
+  opacity: 0;
+}
+
+textarea {
+  width: 100%;
+  color: #FFF;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 .button {
@@ -38,13 +91,16 @@ html {
   background: #404040;
   color: #ffffff !important;
   font-weight: 200;
-  font-size: 50px;
+  font-size: 20px;
   padding: 20px;
   text-transform: uppercase;
   border-radius: 6px;
   display: inline-block;
   margin: 50px 20px 0px 20px;
   display: inline-block;
+  position: fixed;
+  bottom: 10%;
+  left: 42%
 }
 
 .button:hover {

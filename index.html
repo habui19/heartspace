@@ -3,19 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Emotional First aid</title>
+  <title>Heart Space</title>
   <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
 </head>
 
 <body>
-  <div class="message">
-    <span class="insideMessage">Về rồi đấy hả con</span>
-  </div>
-  <div id="block">
-    <textarea name="thoughts" id="thoughts" cols="30" rows="10"></textarea>
+  <div class="wrapper">
+    <main class="page-main">
+      <div class="message">
+        <span class="insideMessage">Về rồi đấy hả con</span>
+      </div>
+      <div class="thoughts">
+        <textarea rows="10" cols="20" placeholder="Write something here..."></textarea>
+      </div>
+      <button class="button" id="letgo">Done</button>
+
+      <audio class="audio" autoplay>
+        <source src="theta-wave.mp3" type="audio/mp3">
+      </audio>
+
+    </main>
   </div>
 
-  <button class="button" id="start">Done</button>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="script.js"></script>
