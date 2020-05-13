@@ -144,3 +144,62 @@ span.fade {
   font-size: 13px;
   color: white;
 }
+
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .welcome {
+    left: 35%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .welcome {
+    left: 30%;
+  }
+
+  .button {
+    left: 43%;
+  }
+
+  .footer {
+    left: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome {
+    left: 10%;
+  }
+
+  .button {
+    left: 33%;
+  }
+
+  .footer {
+    left: 15%;
+  }
+}
+
+@media (max-width: 350px) {
+  .welcome h1 {
+    font-size: 5rem;
+  }
+
+}
