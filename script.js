@@ -63,7 +63,6 @@ function displayMessages(messages) {
         if (i <= messages.length) {
             $('.insideMessage').fadeOut(500, function () {
                 $('.insideMessage').text(newText).fadeIn(500);
-                console.log('working')
             });
         } else {
             clearTimeout(messageInterval);
@@ -84,6 +83,8 @@ function startFunc() {
     enableButton('#letgo');
     $('.firstStep').removeClass('hide');
     displayMessages(greetings);
+    console.log($('textarea'))
+    $('textarea').eq(0).prop('disabled', false);
     $('.thoughts').animate({
         opacity: '100'
     }, 1000);
@@ -95,6 +96,7 @@ function letGo() {
     $('.insideMessage').text("Mẹ hiểu").fadeIn(600);
     displayMessages(acceptantMessages);
     disappear();
+    $('textarea').eq(0).prop('disabled', true);
     $('#letgo').addClass('hide');
     let nextButton = setTimeout(function () {
         enableButton('#next');
@@ -106,6 +108,7 @@ function nextStep() {
     $('.firstStep').addClass('hide');
     $('.nextStep').removeClass('hide');
     $('.insideMessage').text(learn[0]);
+    $('textarea').eq(1).prop('disabled', false);
     enableButton('#done');
     $('.nextStep > .thoughts').css('opacity', '100');
 }
