@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
 
 html {
   font-size: 10px;
@@ -9,7 +9,7 @@ html {
 
 body,
 html {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
 
@@ -29,12 +29,6 @@ html {
   flex-grow: 1;
 }
 
-.page-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .page-main {
   display: flex;
@@ -56,12 +50,12 @@ html {
   -webkit-transform: translateY(-50%) translateX(-50%);
   -o-transform: translateY(-50%) translateX(-50%);
   top: 20%;
-  left: 47%;
+  left: 51%;
   width: 700px;
   color: #fff;
   text-align: center;
   font-size: 40px;
-  font-family: coming soon;
+  font-family: 'Dancing Script', cursive;
   z-index: 999999;
   position: fixed;
 }
@@ -72,9 +66,9 @@ html {
   width: 300px;
   position: fixed;
   top: 35%;
-  left: 35%;
+  left: 40%;
   text-align: center;
-  font-family: lato, sans-serif;
+  /* font-family: lato, sans-serif; */
   z-index: 3;
   opacity: 0;
 }
@@ -125,7 +119,7 @@ textarea {
   text-align: center;
   font-size: 1.5rem;
   position: fixed;
-  top: 25%;
+  top: 15%;
   left: 40%;
 }
 
@@ -145,7 +139,7 @@ span.fade {
 .footer {
   position: fixed;
   bottom: 0%;
-  left: 43%;
+  left: 40%;
   text-align: center;
   font-size: 13px;
   color: white;
