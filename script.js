@@ -114,6 +114,7 @@ function nextStep() {
 
 function finalStep() {
     $('.insideMessage').text("Con làm tốt lắm").fadeIn(600);
+    $('button').prop('disabled', true);
     let display = setTimeout(function () {
         displayMessages(goodbye);
     }, 100);
