@@ -5,8 +5,8 @@ let greetings = [
 let acceptantMessages = [
     'Con có lý do chính đáng để cảm thấy như vậy',
     'Mẹ thương',
-    'Mẹ luôn ở đây với con, cùng con vượt qua cảm xúc này',
-    'Giờ thì con hãy để những nó đi nhé',
+    'Mẹ luôn ở đây với con, cùng con vượt qua tất cả',
+    'Giờ thì con hãy để những cảm xúc này đi nhé',
     'Mẹ yêu con',
 ];
 
@@ -17,7 +17,7 @@ let learn = [
 let goodbye = [
     'Ba mẹ rất tự hào về con',
     'Hãy vững tin bước tiếp trên hành trình của mình con nhé',
-    'Khi nào mệt thì về nhà với ba mẹ',
+    'Khi nào mệt mỏi quá thì về nhà với ba mẹ',
     'Ba mẹ luôn ở trong trái tim con, hỗ trợ khi con cần',
     'Ba mẹ yêu con'
 ];
