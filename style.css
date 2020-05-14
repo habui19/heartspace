@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&display=swap');
 
 html {
   font-size: 10px;
@@ -55,7 +56,7 @@ html {
   color: #fff;
   text-align: center;
   font-size: 40px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'IBM Plex Serif', serif;
   z-index: 999999;
   position: fixed;
 }
@@ -180,7 +181,13 @@ span.fade {
   }
 
   .footer {
-    left: 35%;
+    left: 34%;
+  }
+
+  .thoughts {
+    width: 400px;
+    position: fixed;
+    left: 200px;
   }
 }
 
@@ -196,6 +203,17 @@ span.fade {
   .footer {
     left: 15%;
   }
+
+  .message {
+    width: 360px;
+    font-size: 30px;
+  }
+
+  .thoughts {
+    width: 250px;
+    position: fixed;
+    left: 20%;
+  }
 }
 
 @media (max-width: 350px) {
@@ -203,4 +221,24 @@ span.fade {
     font-size: 5rem;
   }
 
+  .message {
+    width: 260px;
+    font-size: 25px;
+  }
+
+  .footer {
+    left: 17%;
+    font-size: 10px;
+  }
+
+  .button {
+    left: 30%;
+  }
+
+  .thoughts {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    left: 20%;
+  }
 }

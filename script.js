@@ -5,8 +5,8 @@ let greetings = [
 let acceptantMessages = [
     'Con có lý do chính đáng để cảm thấy như vậy',
     'Mẹ thương',
-    'Mẹ luôn ở đây với con',
-    'Giờ thì con hãy để những cảm xúc này đi nhé',
+    'Mẹ luôn ở đây với con, cùng con vượt qua cảm xúc này',
+    'Giờ thì con hãy để những nó đi nhé',
     'Mẹ yêu con',
 ];
 
@@ -17,7 +17,7 @@ let learn = [
 let goodbye = [
     'Ba mẹ rất tự hào về con',
     'Hãy vững tin bước tiếp trên hành trình của mình con nhé',
-    'Nếu mệt thì về đây nghỉ với ba mẹ',
+    'Khi nào mệt thì về nhà với ba mẹ',
     'Ba mẹ luôn ở trong trái tim con, hỗ trợ khi con cần',
     'Ba mẹ yêu con'
 ];
@@ -48,7 +48,7 @@ function onTick() {
 
 
 function disappear() {
-    $('.thoughts').animate({
+    $('.firstStep > .thoughts').animate({
         opacity: '0'
     }, 20000);
 }
@@ -81,19 +81,22 @@ function enableButton(buttonId) {
 
 function startFunc() {
     $('.welcome').addClass('hide');
-    enableButton('#letgo');
     $('.firstStep').removeClass('hide');
     displayMessages(greetings);
     $('.thoughts').animate({
         opacity: '100'
     }, 1000);
-
+    let nextButton = setTimeout(function () {
+        enableButton('#letgo');
+    }, 5000);
     document.querySelector('.audio').play();
 }
 
 function letGo() {
     $('.insideMessage').text("Mẹ hiểu").fadeIn(600);
-    displayMessages(acceptantMessages);
+    let display = setTimeout(function () {
+        displayMessages(acceptantMessages);
+    }, 100);
     disappear();
     $('#letgo').addClass('hide');
     let nextButton = setTimeout(function () {
@@ -107,10 +110,11 @@ function nextStep() {
     $('.nextStep').removeClass('hide');
     $('.insideMessage').text(learn[0]);
     enableButton('#done');
-    $('.nextStep > .thoughts').css('opacity', '100');
 }
 
 function finalStep() {
     $('.insideMessage').text("Con làm tốt lắm").fadeIn(600);
-    displayMessages(goodbye);
+    let display = setTimeout(function () {
+        displayMessages(goodbye);
+    }, 100);
 }
