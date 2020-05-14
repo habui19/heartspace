@@ -178,6 +178,7 @@ span.fade {
 
   .button {
     left: 43%;
+    font-size: 15px;
   }
 
   .footer {
@@ -194,6 +195,7 @@ span.fade {
 @media (max-width: 500px) {
   .welcome {
     left: 10%;
+    top: 10%;
   }
 
   .button {
@@ -211,6 +213,7 @@ span.fade {
 
   .thoughts {
     width: 250px;
+    height: 250px;
     position: fixed;
     left: 20%;
   }
