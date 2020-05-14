@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Space</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .hide {
+      opacity: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- welcome -->
+      <div class="welcome">
+        <h1 class="heartspace">HeartSpace</h1>
+        <h2 class="description"></h2>
+        <button class="button" id="start" onclick='startFunc();'>Start</button>
+      </div>
+    </div>
+    <div class="row hide">
+      <!-- first step -->
+      <div class="firstStep hide">
+        <div class="message">
+          <p class="insideMessage">Về rồi hả con</p>
+        </div>
+
+        <div class="thoughts">
+          <textarea disabled rows="10" cols="20" placeholder="Write something here..."></textarea>
+        </div>
+
+        <button class="" id="letgo" onclick='letGo();' disabled>Done</button>
+
+        <button class='hide' id='next' onclick='nextStep();' disabled>Next</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer">
+        <p>Created by the Universe through Ha Bui</p>
+        <a href="https://www.facebook.com/heartspace101/" class="fa fa-facebook"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
