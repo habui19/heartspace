@@ -61,6 +61,11 @@ html {
   position: fixed;
 }
 
+.hidethoughts {
+  height: 0px;
+  width: 0px;
+}
+
 .thoughts {
   display: block;
   height: 300px;
@@ -98,7 +103,7 @@ textarea {
   position: fixed;
   bottom: 15%;
   left: 45%;
-  z-index: 999;
+  z-index: 999999;
 }
 
 .button:hover {

@@ -80,6 +80,7 @@ function enableButton(buttonId) {
 }
 
 function startFunc() {
+    $('.hidethoughts').attr('class', 'thoughts');
     $('.welcome').addClass('hide');
     $('.firstStep').removeClass('hide');
     displayMessages(greetings);
