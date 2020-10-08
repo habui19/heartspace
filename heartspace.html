@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <a href="final-project.html">LoveKey</a>
   <div class="wrapper">
     <main class="page-main">
 
@@ -49,7 +48,19 @@
           <textarea rows="10" cols="20" placeholder="Write something here..."></textarea>
         </div>
 
-        <button class='' id='done' onclick='finalStep();' disabled>Done</button>
+        <button class='hide' id='done1' onclick='finalStep();' disabled>Done</button>
+
+        <button class='hide' id='done2' onclick='restart();' disabled>Done</button>
+
+
+      </div>
+
+      <div class="restart hide">
+        <div class="message">
+          <p class="insideMessage"></p>
+        </div>
+
+        <button class='hide' id='restart' onclick='location.reload();' disabled>Restart</button>
 
       </div>
 

@@ -110,7 +110,7 @@ function nextStep() {
     $('.firstStep').addClass('hide');
     $('.nextStep').removeClass('hide');
     $('.insideMessage').text(learn[0]);
-    enableButton('#done');
+    enableButton('#done1');
 }
 
 function finalStep() {
@@ -119,4 +119,17 @@ function finalStep() {
     let display = setTimeout(function () {
         displayMessages(goodbye);
     }, 100);
+    $('#done1').addClass('hide');
+
+    let nextButton = setTimeout(function () {
+        enableButton('#done2');
+    }, 20000);
+
+}
+
+function restart() {
+    $('.nextStep').addClass('hide');
+    $('.restart').removeClass('hide');
+    $('.insideMessage').text("Thank you for using HeartSpace. Do you want you to start again?").fadeIn(1000);
+    enableButton('#restart');
 }
