@@ -110,7 +110,9 @@ function nextStep() {
     $('.firstStep').addClass('hide');
     $('.nextStep').removeClass('hide');
     $('.insideMessage').text(learn[0]);
+    console.log('working1')
     enableButton('#done1');
+    console.log('working2')
 }
 
 function finalStep() {
