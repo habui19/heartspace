@@ -63,7 +63,7 @@ function displayMessages(messages) {
         if (i <= messages.length) {
             $('.insideMessage').fadeOut(500, function () {
                 $('.insideMessage').text(newText).fadeIn(500);
-                console.log('working')
+                // console.log('working')
             });
         } else {
             clearTimeout(messageInterval);
@@ -130,6 +130,6 @@ function finalStep() {
 function restart() {
     $('.nextStep').addClass('hide');
     $('.restart').removeClass('hide');
-    $('.insideMessage').text("Thank you for using HeartSpace. Do you want you to start again?").fadeIn(1000);
+    $('.insideMessage').text("Thank you for using HeartSpace. Do you want to start again?").fadeIn(1000);
     enableButton('#restart');
 }
